@@ -1,8 +1,10 @@
 h3{
     text-align: center;
     color:red ;
+    border: solid red;
 
 }
 .heading{
     text-align: center;
+    background-color: aqua;
 }
