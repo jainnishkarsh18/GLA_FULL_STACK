@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Tag</title>
+</head>
+
+<body>
+    <form action="welcome.html" method="GET" autocomplete="off">
+        <label for="fname">First Name: </label>
+        <input type="text" name="fname" id="fname"><br><br>
+        <label for="pass">Password: </label>
+        <input type="password" name="pass" id="pass"><br><br>
+        <input type="checkbox" name="ckk" onclick="showPassword()">showPassword
+        <br><br>
+        <!-- hidden, read only, disabled -->
+        <input list="mylist" name="city1" id="city1" placeholder="Select your city">
+        <datalist id="mylist">
+            <option value="mathura">mathura</option>
+            <option value="gwalior">gwalior</option>
+            <option value="delhi">delhi</option>
+            <option value="Noida">noida</option>
+            <option value="IIT chauman">IIT chauman</option>
+        </datalist>
+
+        <script>
+            function showPassword() {
+                var key = document.getElementById('pass')
+                if (key.type === "password") {
+                    key.type = "text"
+                }
+                else {
+                    key.type = "password"
+                }
+            }
+        </script>
+
+
+        <input type="submit" value="Create">
+        <input type="reset" value="Clear">
+        <pre>
+        Name        <input type="text"><br>
+        Email       <input type="email"><br>
+        Password    <input type="password"><br>
+        Number      <input type="phone"><br>
+
+        </pre>
+    </form>
+
+</body>
+
+</html>

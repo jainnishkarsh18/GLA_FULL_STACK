@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Form</title>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="phone">Phone</label>
+            <input type="phone" name="phone" id="phone" maxlength="10"><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="pswd">Password</label>
+            <input type="pswd" name="pswd" id="pswd"><br><br>
+            <input type="button" value="Insert" id="insert">
+            <input type="button" value="Read" id="read">
+            <input type="button" value="Update" id="update">
+            <input type="button" value="Delete" id="delete">
+
+        </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js" ;></script>
+    <script src="./js/crud.js"></script>
+    <script src="./js/fireConfig.js"></script>
+</body>
+
+</html>
